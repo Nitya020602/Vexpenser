@@ -1,0 +1,28 @@
+.expensesList{
+    margin: 8px 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.empty-cls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.emptyList{
+    height: 350px;
+}
+@media only screen and (max-width:890px){
+    .empty-cls label{
+        font-size: 18px;
+    }
+    .emptyList{
+        height: 200px;
+    }
+}
+@media only screen and (max-width:600px){
+    .empty-cls label{
+        font-size: 14px;
+    }
+}

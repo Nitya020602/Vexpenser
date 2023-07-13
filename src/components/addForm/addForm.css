@@ -1,0 +1,169 @@
+.addForm{
+    border-radius: 10px;
+    background: #CF9FFF;
+    box-shadow:  20px 20px 60px #b087d9,
+                 -5px -5px 60px #eeb7ff;
+    margin: 6px 12px;
+    padding: 20px;
+    flex-direction: column;
+    flex: 1;
+    min-height:50vh ;
+}
+.form-item{
+    margin: 10px 0px;
+    width: 70%;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.form-item label{
+    background-color: lightblue;
+    padding: 1px 10px;
+    border-radius: 4px;
+}
+.form-item input{
+    border: none;
+    outline: none;
+    width: 70%;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.category-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.category{
+    position: relative;
+    width: 50%;
+}
+.categories-dropdown{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 10px 0px;
+    border-radius: 8px;
+    padding-left: 12px;
+}
+.categories-dropdown i{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+.categories-container{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+}
+.category-item{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+.category-item img{
+    height: 25px;
+    margin-right: 20px;
+}
+.form-add-btn{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.form-add-btn label{
+    cursor: pointer;
+}
+.form-add-btn div{
+    display: flex;
+    border: 1px solid black;
+    width: 8%;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+.form-add-btn i{
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}
+@media only screen and (max-width:890px){
+    .form-item label{
+        width: 25%;
+        font-size: 12px;
+    }
+    .form-item input{
+        font-size: 12px;
+    }
+    .categories-dropdown label{
+        font-size: 13px;
+    }
+    .form-add-btn div{
+        width: 15%;
+    }
+    .form-add-btn label{
+        font-size: 15px;
+    }
+    .form-add-btn i{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:600px){
+    .form-item label{
+        width: 20%;
+        font-size: 8px;
+    }
+    .form-item input{
+        font-size: 8px;
+    }
+    .categories-dropdown{
+        width: 50%;
+    }
+    .categories-dropdown label{
+        font-size: 9px;
+    }
+    .form-add-btn div{
+        width: 15%;
+    }
+    .form-add-btn label{
+        font-size: 10px;
+    }
+    .form-add-btn i{
+        font-size: 10px;
+    }
+    .categories-container{
+        width: 60%;
+    }
+    .categories-container label{
+        font-size: 12px;
+    }
+    .category-item img{
+        height: 15px;
+        margin-right: 8px;
+    }
+}
+@media only screen and (max-width:560px){
+    .form-item label{
+        width: 20%;
+        font-size: 6px;
+    }
+    .form-item input{
+        font-size: 6px;
+    }
+    .categories-dropdown{
+        width: 50%;
+    }
+    .categories-dropdown label{
+        font-size: 8px;
+    }
+    .form-add-btn div{
+        width: 15%;
+    }
+
+    .categories-container label{
+        font-size: 10px;
+    }
+}

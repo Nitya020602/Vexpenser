@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 47%;
+}
+@media only screen and (max-width:890px){
+    footer{
+        left: 40%;
+    }
+}
+@media only screen and (max-width:600px){
+    footer{
+        left: 35%;
+        font-size: 12px;
+    }
+}

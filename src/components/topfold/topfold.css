@@ -1,0 +1,116 @@
+.topfold{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 4px;
+    padding: 20px 10px;
+}
+.main-topfold{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.searcher{
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    width: 40%;
+    height: 25px;
+}
+.searcher input{
+    width: 85%;
+    outline: none;
+    margin: 0px 10px;
+    border: none;
+    background-color: white;
+}
+.searcher i{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.add-btn{
+    border: 1px solid white;
+    width: 80%;
+    padding: 0px 5px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.add-btn label{
+    cursor: pointer;
+}
+.add-btn i{
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+.add-topfold{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.control{
+    display: flex;
+    cursor: pointer;
+}
+.control label{
+    cursor: pointer;
+}
+.control i {
+    display: flex;
+    align-items: center;
+    margin:0px 5px;
+    margin-top: 2px;
+}
+.link{
+    color: black;
+}
+.link:hover{
+    color: blueviolet;
+}
+@media only screen and (max-width:890px){
+    .searcher{
+        width: 60%;
+    }   
+}
+@media only screen and (max-width:600px){
+    .topfold{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+    }
+    .searcher{
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }   
+    .searcher input{
+        font-size: 10px;
+    }
+    .searcher i{
+        height: 6px;
+        display: flex;
+        align-items: center;
+    }
+    .add-btn{
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+    .add-btn i{
+        height: 6px;
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+    }
+    .control label{
+        font-size: 10px;
+    }
+    .control i{
+        font-size: 10px;
+    }
+}

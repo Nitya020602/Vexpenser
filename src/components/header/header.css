@@ -1,0 +1,25 @@
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+.header-logo i{
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+@media only screen and (max-width:890px){
+    .header-logo{
+        font-size: 25px;
+    }
+    .header-logo i{
+        margin-top: 2px;
+    }
+}
+@media only screen and (max-width:600px){
+    .header-logo{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,60 @@
+.display-card{
+    background: white;
+    padding: 10px;
+    margin: 3px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardImg{
+    height: 45px;
+}
+.card-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.card-details{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.card-title{
+    font-size: 20px;
+}
+.card-time{
+    color: lightblue;
+    font-size: 12px;
+}
+.card-amt{
+    font-size: 20px;
+    font-weight:500;
+}
+.delete-icon{
+    font-size: 15px;
+    cursor: pointer;
+}
+@media only screen and (max-width:890px){
+    .card-title{
+        font-size: 15px;
+    }
+    .cardImg{
+        height: 35px;
+    }    
+    .card-amt{
+        font-size: 15px;
+    }
+    .delete-icon{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:600px){
+    .cardImg{
+        height: 30px;
+    }
+    .card-time{
+        font-size: 10px;
+    }
+}

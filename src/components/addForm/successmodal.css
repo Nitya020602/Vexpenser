@@ -1,0 +1,30 @@
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgsuccess{
+    height: 200px;
+}
+.home-directer{
+    margin-top: 3px;
+    border: 1px solid black;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+.home-directer i {
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+}
+.linker{
+    text-decoration: none;
+    color: black;
+}
+.linker:hover{
+    color: red;
+}
