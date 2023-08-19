@@ -30,7 +30,8 @@ const AddForm=()=>{
         setOpen(false)
     }
     const handleaction=()=>{
-        if (expenditure===""||amt===""||(!hcategory)){
+        console.log(expenditure,amt)
+        if (expenditure===undefined||amt===undefined||(!hcategory)){
             const notify=()=>toast("Please re-enter details properly");
             notify();
             return;
