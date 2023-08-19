@@ -1,14 +1,14 @@
 import { ADD_EXPENSE, DELETE_EXPENSE, SEARCH_EXPENSE } from "../action-types/expenses";
-// const initialList=()=>{
-//     const list=localStorage.getItem('expensesList');
-//     let expenses = [];
-//     if (list){
-//         expenses=JSON.parse(list)
-//     }
-//     return expenses
-// }
+const initialList=()=>{
+    const list=localStorage.getItem('expensesList');
+    let expenses = [];
+    if (list){
+        expenses=JSON.parse(list)
+    }
+    return expenses
+}
 const initialState={
-    ListExpenses:[],
+    ListExpenses:initialList(),
     query:""
 }
 export const expenseReducer=(state=initialState,action)=>{
