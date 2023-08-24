@@ -29,9 +29,9 @@ const AddForm=()=>{
         setHCategory(category)
         setOpen(false)
     }
+    console.log(expenditure,amt)
     const handleaction=()=>{
-        console.log(expenditure,amt)
-        if (expenditure===undefined||"")||(amt===undefined||"")||(!hcategory)){
+        if ((expenditure===undefined)||(expenditure==="")||(amt===undefined)||(amt==="")||(!hcategory)){
             const notify=()=>toast("Please re-enter details properly");
             notify();
             return;
@@ -68,7 +68,7 @@ const AddForm=()=>{
                 <div className="category">
                     <div className="categories-dropdown" onClick={()=>setOpen(!open)}>
                         <label>{hcategory?hcategory.title:"Category"}</label>
-                        <i class="fi fi-rr-angle-small-down"></i>
+                        <i class="fi fi-rr-angle-small-down icon"></i>
                     </div>
                     {open && <div className="categories-container">
                         {categorieslist.map(category=>(
